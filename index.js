@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 
 app.use(cors()); // Add this line to enable CORS
-app.use(express.urlencoded({ extended: false }));
+
 app.use(express.json());
 
 const postsRouter = require('./routes/posts.router');
